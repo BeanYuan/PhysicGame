@@ -7,7 +7,7 @@ const config = {
     default: 'arcade',
     arcade: {
       gravity: { y: 200 }, // 可以根据需要调整重力
-      debug: true, // 设置为 true 以查看调试信息，如碰撞边界框
+      debug: false, // 设置为 true 以查看调试信息，如碰撞边界框
     }
   }
 };
