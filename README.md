@@ -1,4 +1,4 @@
-# PhysicGame\
+# PhysicGame
 \
 Link for game: \
 "The game uses both continuous and discrete inputs from the player": Player can hold the egg or drag the egg to satisfy continuous and discrete input from player.\
