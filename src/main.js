@@ -2,11 +2,11 @@ const config = {
   type: Phaser.AUTO,
   width: 800,
   height: 600,
-  scene: [FirstLevel],//[StartScene, FirstLevel],
+  scene: [StartScene, FirstLevel, SecondLevel, ThirdLevel, FinalScene, SuccessfulScene], //
   physics: {
     default: 'arcade',
     arcade: {
-      gravity: { y: 300 }, // 可以根据需要调整重力
+      gravity: { y: 200 }, // 可以根据需要调整重力
       debug: true, // 设置为 true 以查看调试信息，如碰撞边界框
     }
   }
