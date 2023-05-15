@@ -36,11 +36,15 @@ class SuccessfulScene extends Phaser.Scene {
         let startButtonText = this.add.text(315, 340, "Contiue", {
              fontSize: '32px',
              color: "#f7b457"
-            });
+        });
         let successfulText = this.add.text(290, 250, "Successful", {
                 fontSize: '32px',
                 color: "#f7b457"
-               });
+        });
+        let score = this.add.text(270, 290, "Score: " + this.registry.get('score'), {
+            fontSize: '24px',
+            color: "#f7b457"
+        });
         let mask = this.add.rectangle(0, 0, this.cameras.main.width, this.cameras.main.height, 0x000000);
         mask.setOrigin(0, 0);
         mask.alpha = 0;

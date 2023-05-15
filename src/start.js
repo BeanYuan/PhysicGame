@@ -11,6 +11,7 @@ class StartScene extends Phaser.Scene {
     }
     create() {
         this.registry.set('level', 1);
+        this.registry.set('score', 100);
 
         let egg = this.add.image(180, 220, 'egg')
         .setScale(0.8);

@@ -13,6 +13,7 @@ class FirstLevel extends Phaser.Scene {
 
     create() {
         // set background color
+        this.registry.set('score', 100);
         this.cameras.main.setBackgroundColor('#f5cf8e');
 
         this.wallGroup = this.physics.add.group();
@@ -62,6 +63,7 @@ class FirstLevel extends Phaser.Scene {
 
     onWallCollision(sprite1, sprite2) {
         this.wallCollide = true;
+        this.registry.set('score', this.registry.get('score') - 5);
     }
 
     createSafeGroup() {
